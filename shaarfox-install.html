@@ -1,0 +1,19 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Page d'installation de Shaarfox</title>
+</head>
+<body>
+	<script>
+		var manifestUrl = 'manifest.webapp';
+		var req = navigator.mozApps.installPackage(manifestUrl);
+		req.onsuccess = function() {
+		<!--	alert(this.result.origin); -->
+		};
+		req.onerror = function() {
+		alert(this.error.name);
+		};
+	</script>
+</body>
+</html>
