@@ -1,5 +1,5 @@
 {
-	"package_path": "package.zip"
+	"package_path": "package.zip",
 	"version": "0.2",
 	"name": "Shaarfox",
 	"description": "Share links via Shaarli",
