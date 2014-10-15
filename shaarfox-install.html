@@ -5,15 +5,17 @@
 	<title>Page d'installation de Shaarfox</title>
 </head>
 <body>
+	<img src="icons/shaarli_60.png" alt="Shaarli's icon" onclick="installShaarli()"/>
 	<script>
+	function installShaarli(){
 		var manifestUrl = 'https://hferee.github.io/manifest.webapp';
 		var req = navigator.mozApps.installPackage(manifestUrl);
 		req.onsuccess = function() {
-		<!--	alert(this.result.origin); -->
 		};
 		req.onerror = function() {
-		alert(this.error.name);
+			alert(this.error.name);
 		};
+	}
 	</script>
 </body>
 </html>
