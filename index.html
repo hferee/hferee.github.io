@@ -2,11 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Page d'installation de Shaarfox</title>
-</head>
-<body>
-	<img src="icons/shaarli_60.png" alt="Shaarli's icon" onclick="installShaarli()"/>
-	<script>
+	<title>Shaarfox installation webpage</title>
+
+<script>
 	function installShaarli(){
 		var manifestUrl = 'https://hferee.github.io/manifest.webapp';
 		var req = navigator.mozApps.installPackage(manifestUrl);
@@ -17,5 +15,31 @@
 		};
 	}
 	</script>
+</head>
+<body>
+	<section>
+	To install Shaarfox (mostly for mobile Firefox OS users), click on the icon: <br/>
+	<figure>
+		<img src="icons/shaarli_60.png" alt="Shaarli's icon" onclick="installShaarli()"/>
+	</figure>
+	
+	It should also work on android (any feedback is appreciated).<br/>
+	</section>
+	<section>
+		For those who know my GPG key, here is the signature for package.zip:<br/>
+<pre><code>
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAABAgAGBQJUPmIYAAoJELiDyWEyVJaOC2MH/3o21oxrJtVG+BfHiPWHB2/P
+4SV5snm+dLASevNdVk1QPRG2p1rDWA7v7fJBai26sf9vEKWrW8SYN29ImOHiCS9E
+yH2NUNoASk7+hzPXXKw0RENPqzc3KAU0e9UcnuRN+4jNfvzrKV3jtJy9+KUWlj5n
+AEyFwmQjDzgoj3Pdpxts1xD0A31qnZMlWdyRITKd/3cNzULU+5sB8fy/KFZ4WQrY
+YQ6WbJTGPMJtaURWILnC5BhZhIjApNrQkkQfZQMGflkr+k0pFQoRzfHk52Zgjgks
+Lm8CLX9bx1d1fJLMcb7/GxS3bOVeTYsdBJHNChyM/fbcNC9t44Y6yqXRPZtK668=
+=Og/7
+-----END PGP SIGNATURE-----
+</code></pre>
+	</section>
 </body>
 </html>
